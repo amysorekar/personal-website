@@ -3,11 +3,12 @@
 }
 
 .body {
-  background-color: black;
+  background-color: #d2b48c;
+  font-family: "Sunshiney", cursive;
 }
 
 #header {
-  background: rgba(0, 0, 0, 0.8);
+  background: #d2b48c;
   padding: 10px;
   width: 100%;
   position: fixed;
@@ -58,10 +59,34 @@
 }
 
 .menu a:hover {
-  background-color: #7f02cc;
+  background-color: #109fec92;
   color: #ffffff;
   font-size: 1.2em;
   animation: fadeSize 0.5s forwards;
+}
+
+.about-section {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.work-section {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.sports-section {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.coding-section {
+  padding: 10px;
+  text-align: center;
+  color: white;
 }
 
 @keyframes fadeSize {
@@ -71,4 +96,59 @@
   to {
     font-size: 1.4em;
   }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 120rem;
+  min-height: inherit;
+  margin: auto;
+  display: grid;
+  place-content: center;
+}
+
+.main_box {
+  display: flex;
+  background-color: rgb(16, 174, 118);
+  color: #4821e4;
+  margin: 7em auto;
+  width: 90rem;
+}
+
+.box {
+  height: 42rem;
+  padding: 0 6em;
+  border-right: 2px solid #fff;
+  position: relative;
+  overflow: hidden;
+  transition: 800ms;
+  cursor: pointer;
+}
+
+.box h2 {
+  width: 4rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+.box.active h2 {
+  left: 25px;
+  right: auto;
+  margin: 0;
+  font-weight: 600;
+}
+
+.box.active {
+  width: 70% !important;
 }
