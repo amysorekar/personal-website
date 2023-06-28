@@ -18,7 +18,7 @@ $(document).ready(function () {
 const boxItem = document.querySelectorAll(".main_box li");
 const box = document.querySelectorAll(".box");
 let getSlide = boxItem.length - 1;
-let slideCalc = 30 / getSlide + "%";
+let slideCalc = 0.001 / getSlide + "%";
 box.forEach((e) => {
   e.addEventListener("click", function () {
     box.forEach((box) => {

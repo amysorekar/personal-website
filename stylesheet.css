@@ -3,12 +3,11 @@
 }
 
 .body {
-  background-color: #d2b48c;
+  background: linear-gradient(90deg, #000000 0%, #454b56 100%);
   font-family: "Sunshiney", cursive;
 }
 
 #header {
-  background: #d2b48c;
   padding: 10px;
   width: 100%;
   position: fixed;
@@ -28,7 +27,7 @@
 }
 
 .menu {
-  background-color: #f2f2f2;
+  background-color: #d500ff;
   border-radius: 10px;
   padding: 10px;
 }
@@ -48,8 +47,9 @@
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
   border-radius: 5px;
+  border-right: 1px solid #ffffff;
 }
 
 .banner img {
@@ -109,16 +109,16 @@
 
 .main_box {
   display: flex;
-  background-color: rgb(16, 174, 118);
+  background: radial-gradient(circle, rgb(0, 0, 0) 33%, rgb(208, 0, 255) 100%);
   color: #4821e4;
-  margin: 7em auto;
-  width: 90rem;
+  margin: auto;
+  width: 100rem;
 }
 
 .box {
-  height: 42rem;
+  height: 40rem;
   padding: 0 6em;
-  border-right: 2px solid #fff;
+  border-right: 2px solid #ffffff98;
   position: relative;
   overflow: hidden;
   transition: 800ms;
@@ -140,15 +140,48 @@
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 4px;
+  font-weight: 100;
 }
 
 .box.active h2 {
   left: 25px;
   right: auto;
   margin: 0;
-  font-weight: 600;
+  font-weight: 100;
 }
 
 .box.active {
-  width: 70% !important;
+  width: 40% !important;
+}
+
+.products {
+  display: flex;
+  gap: 2em;
+  width: 85%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2em;
+  opacity: 0;
+  transition: 600ms;
+  transform: translateY(100%);
+  cursor: default;
+}
+
+.box.active .products {
+  opacity: 1;
+  transform: none;
+}
+
+.product {
+  width: 100%;
+  height: 22rem;
+}
+
+.product_detail .product_name {
+  margin: 0.5em 0;
+  font-size: 1.2em;
+  font-weight: 100;
+  color: rgb(255, 255, 255);
 }
