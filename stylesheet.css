@@ -10,7 +10,7 @@
 #header {
   padding: 10px;
   width: 100%;
-  position: fixed;
+  position: relative;
   left: 0;
   top: 0;
 }
@@ -50,6 +50,7 @@
   color: #ffffff;
   border-radius: 5px;
   border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
 }
 
 .banner img {
@@ -110,13 +111,13 @@
 .main_box {
   display: flex;
   background: radial-gradient(circle, rgb(0, 0, 0) 33%, rgb(208, 0, 255) 100%);
-  color: #4821e4;
+  color: #ffffff;
   margin: auto;
   width: 100rem;
 }
 
 .box {
-  height: 40rem;
+  height: 90rem;
   padding: 0 6em;
   border-right: 2px solid #ffffff98;
   position: relative;
@@ -144,7 +145,7 @@
 }
 
 .box.active h2 {
-  left: 25px;
+  left: 5px;
   right: auto;
   margin: 0;
   font-weight: 100;
