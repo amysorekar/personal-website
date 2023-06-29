@@ -12,21 +12,21 @@ $(document).ready(function () {
   });
 });
 
-// // accordion menu
-// const boxItem = document.querySelectorAll(".main_box li");
-// const box = document.querySelectorAll(".box");
-// let getSlide = boxItem.length - 1;
-// let slideCalc = 0.001 / getSlide + "%";
-// box.forEach((e) => {
-//   e.addEventListener("click", function () {
-//     box.forEach((box) => {
-//       box.style.width = slideCalc;
-//       box.classList.remove("active");
-//     });
-//     e.classList.add("active");
-//   });
-// });
+// accordion menu
+let listElements = document.querySelectorAll(".link");
 
+listElements.forEach((listElement) => {
+  listElement.addEventListener("click", () => {
+    if (listElement.classList.contains("active")) {
+      listElement.classList.remove("active");
+    } else {
+      listElements.forEach((listE) => {
+        listE.classList.remove("active");
+      });
+      listElement.classList.toggle("active");
+    }
+  });
+});
 // text animation
 const text = document.querySelector(".sec-text");
 const textLoad = () => {

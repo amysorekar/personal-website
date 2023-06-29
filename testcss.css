@@ -6,7 +6,7 @@
 
 .body {
   background: rgb(0, 0, 0);
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -22,7 +22,6 @@ header {
 }
 
 header .logo {
-  font-family: "Poppins", sans-serif;
   position: relative;
   font-weight: 700;
   text-decoration: none;
@@ -87,7 +86,7 @@ header #toggle:after {
   right: -400px;
   width: 400px;
   height: 100vh;
-  background: #00a2ff;
+  background: #000000;
   z-index: 1;
   display: grid;
   transition: 0.5s;
@@ -263,4 +262,83 @@ header #toggle:after {
   100% {
     left: 0%;
   }
+}
+
+ul {
+  list-style: none;
+}
+
+.accordion-menu {
+  max-width: 350px;
+  margin: 100px auto 20px;
+  background: #242d41;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #000;
+}
+
+.accordion-menu li:last-child .dropdown {
+  border-bottom: 0;
+}
+
+.accordion-menu li.active .dropdown {
+  color: #fff;
+}
+
+.accordion-menu li.active .dropdown .fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+.dropdown {
+  cursor: pointer;
+  display: block;
+  padding: 15px 15px 15px 45px;
+  font-size: 18px;
+  border-bottom: 2px solid #2d374d;
+  color: #999999;
+  position: relative;
+  transition: all 0.4s ease-out;
+}
+
+.dropdown:hover {
+  background: #566f82;
+  /* fallback colour */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#27455c), to(#273a47));
+}
+
+.dropdown i {
+  position: absolute;
+  top: 17px;
+  left: 16px;
+}
+
+.dropdown .fa-chevron-down {
+  right: 12px;
+  left: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.submenuItems {
+  display: none;
+  background: #2d374d;
+  ;
+  transition: all 2s ease-in-out;
+}
+
+.accordion-menu li.active .submenuItems {
+  display: block;
+}
+
+.submenuItems a {
+  display: block;
+  color: #66b2ff;
+  font-weight: 600;
+  padding: 12px 12px 12px 45px;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+}
+
+.submenuItems a:hover {
+  background-color: #5c7185;
+  color: #fff;
 }
