@@ -12,23 +12,32 @@ $(document).ready(function () {
   });
 });
 
-// accordion menu
-
 // text animation
 const text = document.querySelector(".sec-text");
+
 const textLoad = () => {
   setTimeout(() => {
-    text.textContent = "a Student";
+    text.textContent = "a student";
   }, 0);
   setTimeout(() => {
-    text.textContent = "an Athlete";
+    text.textContent = "an athlete";
   }, 2000);
   setTimeout(() => {
-    text.textContent = "a Scientist";
-  }, 4000); //1s = 1000 milliseconds
+    text.textContent = "a scientist";
+  }, 4000);
+  setTimeout(() => {
+    text.textContent = "a chef";
+  }, 6000);
+  setTimeout(() => {
+    text.textContent = "a musician";
+  }, 8000);
+  setTimeout(() => {
+    text.textContent = "a son";
+  }, 10000);
 };
+
 textLoad();
-setInterval(textLoad, 6000);
+setInterval(textLoad, 12000);
 
 // toggle menu
 function toggle() {
