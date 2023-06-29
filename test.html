@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <title>Anand Mysorekar</title>
     <link rel="stylesheet" href="testcss.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js" defer></script>
   </head>
-  <body class="body">
-    <section class="banner" id="sec">
+
+  <body>
+    <!-- <section class="banner" id="sec">
       <header id="header">
         <a
           href="https://en.wikipedia.org/wiki/Anand_(name)#:~:text=Anand%20(pronounced%20%5Ba%CB%90%CB%88n%C9%99nd%CC%AA%5D),which%20means%20happiness%20or%20joy."
           class="logo"
           >Anand</a
         >
-        <div id="toggle" onclick="toggle()"></div>
       </header>
 
       <div class="content">
@@ -26,6 +25,7 @@
           <span class="text sec-text">a Student</span>
         </div>
       </div>
+
       <ul class="sci">
         <li>
           <a href="https://www.linkedin.com/in/anandmysorekar/"
@@ -36,65 +36,19 @@
           <a href="https://github.com/amysorekar"><img src="github.png" /></a>
         </li>
       </ul>
-    </section>
-    <div id="navigation">
-      <ul>
-        <li><a href="#about">About Me!</a></li>
-        <li><a href="#work">Work Experience</a></li>
-        <li><a href="#coding">Coding Projects</a></li>
-        <li><a href="#sports">Sports</a></li>
-      </ul>
-    </div>
-    <div class="container">
-      <ul class="accordion-menu">
-        <li class="link">
-          <div class="dropdown">
-            <i class="fa-brands fa-python"></i>
-            Python
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-          </div>
-          <ul class="submenuItems">
-            <li><a href="#">Python Level 1</a></li>
-            <li><a href="#">Python Level 2</a></li>
-          </ul>
-        </li>
-        <li class="link">
-          <div class="dropdown">
-            <i class="fa-brands fa-node-js"></i>
-            Node-JS
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-          </div>
-          <ul class="submenuItems">
-            <li><a href="#">Node-JS Level 1</a></li>
-            <li><a href="#">Node-JS Level 2</a></li>
-            <li><a href="#">Node-JS Level 3</a></li>
-          </ul>
-        </li>
-        <li class="link">
-          <div class="dropdown">
-            <i class="fa-brands fa-react"></i>
-            React
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-          </div>
-          <ul class="submenuItems">
-            <li><a href="#">React Level 1</a></li>
-            <li><a href="#">React Level 2</a></li>
-            <li><a href="#">React Level 3</a></li>
-          </ul>
-        </li>
-        <li class="link">
-          <div class="dropdown">
-            <i class="fa-brands fa-bootstrap"></i>
-            Bootstrap
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-          </div>
-          <ul class="submenuItems">
-            <li><a href="#">Bootstrap Level 1</a></li>
-            <li><a href="#">Bootstrap Level 2</a></li>
-            <li><a href="#">Bootstrap Level 3</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+    </section> -->
+
+    <ul>
+      <li data-text="Home"><a href="#home">Home</a></li>
+      <li data-text="About Me!"><a href="#about">About Me!</a></li>
+      <li data-text="Work Experience">
+        <a href="#work">Work Experience</a>
+      </li>
+      <li data-text="Coding Projects">
+        <a href="#coding">Coding Projects</a>
+      </li>
+      <li data-text="Sports"><a href="#sports">Sports</a></li>
+      <li data-text="Socials"><a href="#socials">Socials</a></li>
+    </ul>
   </body>
 </html>
