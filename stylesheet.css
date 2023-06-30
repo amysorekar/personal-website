@@ -659,6 +659,71 @@ body,
   border-radius: 10px;
 }
 
+.dropdown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Semi-transparent black */
+  display: none;
+}
+
+.dropdown.active {
+  display: block;
+}
+
+
+.dropdown-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0);
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 0.5s ease;
+}
+
+.dropdown-content.no-border {
+  border-color: white;
+}
+
+.dropdown-content a {
+  display: block;
+  margin-bottom: 10px;
+  color: #00a2ff;
+  text-decoration: none;
+  transition: transform 0.5s ease;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  transform: scale(1.2);
+}
+
+.close-button {
+  position: absolute;
+  top: 2px;
+  right: 12px;
+  font-size: 30px;
+  color: #00a2ff;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.close-button:hover {
+  transform: scale(1.6);
+}
+
 @keyframes rainbow-border {
   0% {
     border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1;
@@ -679,4 +744,63 @@ body,
   100% {
     border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1;
   }
+}
+
+.neon-text {
+  position: fixed;
+  top: 15vh;
+  /* Adjust the value to position the text vertically */
+  left: 40%;
+  font-size: 40px;
+  color: #d500ff;
+  text-align: center;
+  text-shadow: 0 0 10px #d500ff, 0 0 20px #d500ff, 0 0 40px #d500ff, 0 0 80px #d500ff;
+  transition: transform 0.5s ease;
+  transform-origin: center;
+}
+
+.neon-text:hover {
+  transform: scale(1.2);
+}
+
+.bubble {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  display: none;
+  z-index: 9999;
+  border: 2px solid white;
+}
+
+.bubble.active {
+  display: block;
+}
+
+.bubble .close-button {
+  position: absolute;
+  top: 3px;
+  right: 12px;
+  font-size: 35px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.bubble .close-button:hover {
+  transform: scale(1.6);
+}
+
+.bubble p {
+  color: #00a2ff;
+  font-size: 16px;
+}
+
+.bubble-content {
+  color: white;
 }

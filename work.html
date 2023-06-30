@@ -21,6 +21,8 @@
       </div>
     </div>
 
+    <div class="neon-text">Work Experience</div>
+
     <div class="box">
       <div class="imgBx">
         <img src="Smoothie.png" />
@@ -74,10 +76,33 @@
         <h2>MD Anderson<br /><span>Research Assistant</span></h2>
       </div>
     </div>
-
     <div class="buttons-container">
-      <a href="#" class="button">Stories</a>
-      <a href="#" class="button">Experience</a>
+      <a href="#" class="button" onclick="toggleDropdown('stories')">Stories</a>
+      <a href="#" class="button" onclick="toggleDropdown('experience')"
+        >Experience</a
+      >
+    </div>
+
+    <div id="dropdown" class="dropdown">
+      <div class="dropdown-content">
+        <span class="close-button" onclick="toggleDropdown()">×</span>
+        <!-- Close button -->
+        <a href="#" onclick="showBubble('Smoothie King')">Smoothie King</a>
+        <a href="#" onclick="showBubble('BP Gas')">BP Gas</a>
+        <a href="#" onclick="showBubble('OrangeTheory Fitness')"
+          >OrangeTheory Fitness</a
+        >
+        <a href="#" onclick="showBubble('Baylor College of Medicine')"
+          >Baylor College of Medicine</a
+        >
+        <a href="#" onclick="showBubble('UC San Diego')">UC San Diego</a>
+        <a href="#" onclick="showBubble('MD Anderson')">MD Anderson</a>
+      </div>
+    </div>
+
+    <div id="bubble" class="bubble">
+      <span class="close-button" onclick="closeBubble()">×</span>
+      <p id="bubble-content">This is in the bubble</p>
     </div>
   </body>
 </html>

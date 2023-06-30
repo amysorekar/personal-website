@@ -1,17 +1,3 @@
-// sliding scroll
-$(document).ready(function () {
-  $(".menu a").click(function (event) {
-    event.preventDefault();
-    var targetId = $(this).attr("href");
-    $("html, body").animate(
-      {
-        scrollTop: $(targetId).offset().top,
-      },
-      800
-    );
-  });
-});
-
 // text animation
 const text = document.querySelector(".sec-text");
 const textLoad = () => {
@@ -38,10 +24,31 @@ const textLoad = () => {
 textLoad();
 setInterval(textLoad, 12000);
 
-// toggle menu
-function toggle() {
-  var sec = document.getElementById("sec");
-  var nav = document.getElementById("navigation");
-  sec.classList.toggle("active");
-  nav.classList.toggle("active");
+// pop up menu
+function toggleDropdown(type) {
+  var dropdown = document.getElementById("dropdown");
+
+  if (dropdown.classList.contains("active")) {
+    dropdown.classList.remove("active");
+  } else {
+    dropdown.classList.add("active");
+  }
+}
+
+function showBubble(content) {
+  var bubble = document.getElementById("bubble");
+  var bubbleContent = document.getElementById("bubble-content");
+  var dropdownContent = document.getElementById("dropdown-content");
+
+  bubbleContent.textContent = content;
+  bubble.classList.add("active");
+  dropdownContent.classList.add("no-border");
+}
+
+function closeBubble() {
+  var bubble = document.getElementById("bubble");
+  var dropdownContent = document.getElementById("dropdown-content");
+
+  bubble.classList.remove("active");
+  dropdownContent.classList.remove("no-border");
 }
