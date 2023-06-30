@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <title>Anand Mysorekar</title>
-    <link rel="stylesheet" href="testcss.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js" defer></script>
   </head>
-  <body class="body">
-    <section class="banner" id="sec">
-      <header id="header">
-        <a
-          href="https://en.wikipedia.org/wiki/Anand_(name)#:~:text=Anand%20(pronounced%20%5Ba%CB%90%CB%88n%C9%99nd%CC%AA%5D),which%20means%20happiness%20or%20joy."
-          class="logo"
-          >Anand</a
-        >
-        <div id="toggle" onclick="toggle()"></div>
-      </header>
 
+  <body class="body">
+    <nav>
+      <ul>
+        <li data-text="About Me!"><a href="about_me.html">About Me!</a></li>
+        <li data-text="Work Experience">
+          <a href="work.html">Work Experience</a>
+        </li>
+        <li data-text="Coding Projects">
+          <a href="coding.html">Coding Projects</a>
+        </li>
+        <li data-text="Sports"><a href="sports.html">Sports</a></li>
+        <li data-text="Socials"><a href="socials.html">Socials</a></li>
+      </ul>
+    </nav>
+    <a
+      href="https://en.wikipedia.org/wiki/Anand_(name)#:~:text=Anand%20(pronounced%20%5Ba%CB%90%CB%88n%C9%99nd%CC%AA%5D),which%20means%20happiness%20or%20joy."
+      class="logo"
+      >Anand
+    </a>
+
+    <div class="icon-container">
+      <a href="https://github.com/amysorekar" class="icon-link">
+        <img src="github.png" alt="GitHub Icon" class="icon-img" />
+      </a>
+      <a href="https://www.linkedin.com/in/anandmysorekar/" class="icon-link">
+        <img src="linkedin.png" alt="LinkedIn Icon" class="icon-img" />
+      </a>
+    </div>
+
+    <section id="home">
       <div class="content">
         <h2>Hello, my name is <span>anand </span></h2>
         <div class="container">
@@ -26,24 +45,6 @@
           <span class="text sec-text">a Student</span>
         </div>
       </div>
-      <ul class="sci">
-        <li>
-          <a href="https://www.linkedin.com/in/anandmysorekar/"
-            ><img src="linkedin.png"
-          /></a>
-        </li>
-        <li>
-          <a href="https://github.com/amysorekar"><img src="github.png" /></a>
-        </li>
-      </ul>
     </section>
-    <div id="navigation">
-      <ul>
-        <li><a href="#">About Me!</a></li>
-        <li><a href="#">Work Experience</a></li>
-        <li><a href="#">Coding Projects</a></li>
-        <li><a href="#">Sports</a></li>
-      </ul>
-    </div>
   </body>
 </html>

@@ -14,7 +14,6 @@ $(document).ready(function () {
 
 // text animation
 const text = document.querySelector(".sec-text");
-
 const textLoad = () => {
   setTimeout(() => {
     text.textContent = "a student";
