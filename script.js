@@ -40,7 +40,20 @@ function showBubble(content) {
   var bubbleContent = document.getElementById("bubble-content");
   var dropdownContent = document.getElementById("dropdown-content");
 
-  bubbleContent.textContent = content;
+  if (content === "Smoothie King") {
+    bubbleContent.textContent = "Information about Smoothie King.";
+  } else if (content === "BP Gas") {
+    bubbleContent.textContent = "Information about BP Gas.";
+  } else if (content === "OrangeTheory Fitness") {
+    bubbleContent.textContent = "Information about OrangeTheory Fitness.";
+  } else if (content === "Baylor College of Medicine") {
+    bubbleContent.textContent = "Information about Baylor College of Medicine.";
+  } else if (content === "UC San Diego") {
+    bubbleContent.textContent = "Information about UC San Diego.";
+  } else if (content === "MD Anderson") {
+    bubbleContent.textContent = "Information about MD Anderson.";
+  }
+
   bubble.classList.add("active");
   dropdownContent.classList.add("no-border");
 }
