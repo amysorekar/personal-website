@@ -460,7 +460,7 @@ body,
 }
 
 .nav input:checked~span {
-  background-color: white;
+  background-color: #d500ff;
 }
 
 .nav span:nth-child(2) {
