@@ -615,3 +615,68 @@ body,
   font-weight: 200;
   letter-spacing: 2px;
 }
+
+.buttons-container {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  background: black;
+  transition: transform 0.5s ease;
+  opacity: 1;
+
+}
+
+.button:hover {
+  animation: rainbow-border 5s infinite;
+  transform: scale(1.2);
+}
+
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-radius: 10px;
+}
+
+@keyframes rainbow-border {
+  0% {
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1;
+  }
+
+  25% {
+    border-image: linear-gradient(to right, yellow, green, blue, indigo, violet, red, orange) 1;
+  }
+
+  50% {
+    border-image: linear-gradient(to right, blue, indigo, violet, red, orange, yellow, green) 1;
+  }
+
+  75% {
+    border-image: linear-gradient(to right, indigo, violet, red, orange, yellow, green, blue) 1;
+  }
+
+  100% {
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1;
+  }
+}
