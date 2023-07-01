@@ -3,24 +3,44 @@
   <head>
     <meta charset="utf-8" />
     <title>Anand Mysorekar</title>
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="coding.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <h1 class="special">
-      <p>coding</p>
-    </h1>
-    <div class="nav">
-      <input type="checkbox" />
-      <span></span>
-      <span></span>
-      <div class="menu">
-        <li><a href="homepage.html">home</a></li>
-        <li><a href="about_me.html">about</a></li>
-        <li><a href="work.html">work experience</a></li>
-        <li><a href="sports.html">sports</a></li>
-        <li><a href="socials.html">socials</a></li>
+    <div class="button" onclick="toggleMenu()">Menu</div>
+
+    <div id="menu" class="menu">
+      <a href="homepage.html">home</a>
+      <a href="about_me.html">about</a>
+      <a href="work.html">work experience</a>
+      <a href="sports.html">sports</a>
+      <a href="socials.html">socials</a>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+
+    <div class="background-one">
+      <div class="link-container">
+        <a class="link-one" href="https://github.com/amysorekar/Monkey"
+          >Monkey Project</a
+        >
       </div>
+    </div>
+
+    <div class="background-two link-container">
+      <a
+        class="link-two"
+        href="https://github.com/amysorekar/chose-your-own-adventure"
+        >Adventure</a
+      >
+    </div>
+
+    <div class="background-three link-container">
+      <a
+        class="link-three"
+        href="https://github.com/amysorekar/personal-website"
+        >Personal Website</a
+      >
     </div>
   </body>
 </html>

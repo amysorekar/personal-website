@@ -95,3 +95,11 @@ function closeBubble() {
   bubble.classList.remove("active");
   dropdownContent.classList.remove("no-border");
 }
+
+// open menu
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  const overlay = document.getElementById("overlay");
+  menu.classList.toggle("open");
+  overlay.classList.toggle("open");
+}
