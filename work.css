@@ -219,7 +219,7 @@
 .dropdown-content a {
     display: block;
     margin-bottom: 10px;
-    color: #00a2ff;
+    color: #ff0000;
     text-decoration: none;
     transition: transform 0.5s ease;
     text-align: center;
@@ -234,7 +234,7 @@
     top: 2px;
     right: 12px;
     font-size: 30px;
-    color: #00a2ff;
+    color: #ff0000;
     cursor: pointer;
     transition: transform 0.5s ease;
 }
@@ -271,9 +271,9 @@
     /* Adjust the value to position the text vertically */
     left: 40%;
     font-size: 40px;
-    color: #d500ff;
+    color: #ff0000;
     text-align: center;
-    text-shadow: 0 0 10px #d500ff, 0 0 20px #d500ff, 0 0 40px #d500ff, 0 0 80px #d500ff;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000;
     transition: transform 0.5s ease;
     transform-origin: center;
 }
@@ -316,7 +316,7 @@
 }
 
 .bubble p {
-    color: #00a2ff;
+    color: #ff0000;
     font-size: 19px;
 }
 
@@ -364,14 +364,14 @@ body,
 
 .menu li a {
     text-decoration: none;
-    color: #00a2ff;
+    color: white;
     text-transform: uppercase;
     font-weight: 600;
     transition: 0.5s;
 }
 
 .menu li a:hover {
-    color: #161919;
+    color: #ff0000;
 }
 
 .nav input {
@@ -387,7 +387,7 @@ body,
     width: 30px;
     height: 4px;
     border-radius: 50px;
-    background-color: #d500ff;
+    background-color: #ff0000;
     transition: transform 0.5s ease;
     pointer-events: none;
     transition: 0.5s;
@@ -398,7 +398,7 @@ body,
 }
 
 .nav input:checked~span {
-    background-color: #d500ff;
+    background-color: #ff0000;
 }
 
 .nav span:nth-child(2) {
@@ -421,7 +421,7 @@ body,
 
 .special {
 
-    color: #d500ff;
+    color: #ff0000;
     transform: scale(1.2);
     transition: transform 0.6s;
     font-size: 1em;

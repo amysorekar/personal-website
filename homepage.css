@@ -36,17 +36,17 @@
 
 @keyframes neon-glow {
   0% {
-    text-shadow: 0 0 10px #d500ff, 0 0 20px #d500ff, 0 0 40px #d500ff;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000;
     /* Initial glow size and color */
   }
 
   50% {
-    text-shadow: 0 0 20px #d500ff, 0 0 40px #d500ff, 0 0 80px #d500ff;
+    text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000;
     /* Expanded glow size and color */
   }
 
   100% {
-    text-shadow: 0 0 10px #d500ff, 0 0 20px #d500ff, 0 0 40px #d500ff;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000;
     /* Back to initial glow size and color */
   }
 }
