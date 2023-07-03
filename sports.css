@@ -344,6 +344,7 @@ body {
 
 .bubble-content {
     color: white;
+    overflow: auto;
 }
 
 @media screen and (max-width: 480px) {
@@ -377,15 +378,21 @@ body {
         max-width: 350px;
         padding: 15px;
         font-size: 14px;
+
+    }
+
+    .dropdown-content {
+        width: 200px;
+        height: 200px;
+        padding: 10px;
     }
 
     .bubble p {
-        font-size: 14px;
+        overflow: auto;
+        font-size: 10px;
     }
 
-    .bubble .close-button {
-        top: 5px;
-        right: 5px;
+    .close-button {
         font-size: 20px;
     }
 }
