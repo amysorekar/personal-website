@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Anand Mysorekar</title>
     <link rel="stylesheet" href="sports.css" />
-    <script src="script.js" defer></script>
+    <script src="sports.js" defer></script>
   </head>
   <body>
     <div class="nav">
@@ -12,23 +12,44 @@
       <span></span>
       <span></span>
       <div class="menu">
-        <li><a href="homepage.html">home</a></li>
-        <li><a href="about_me.html">about</a></li>
-        <li><a href="work.html">work experience</a></li>
-        <li><a href="coding.html">coding projects</a></li>
-        <li><a href="socials.html">socials</a></li>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="about_me.html">About</a></li>
+        <li><a href="work.html">Work Experience</a></li>
+        <li><a href="coding.html">Coding Projects</a></li>
+        <li><a href="socials.html">Socials</a></li>
       </div>
     </div>
 
     <div class="box">
-      <span style="--i: 1"><img src="lax.JPG" /></span>
-      <span style="--i: 2"><img src="me-n-dogs.JPG" /></span>
-      <span style="--i: 3"><img src="skydiving.JPG" /></span>
-      <span style="--i: 4"><img src="lax.JPG" /></span>
-      <span style="--i: 5"><img src="lax.JPG" /></span>
-      <span style="--i: 6"><img src="lax.JPG" /></span>
-      <span style="--i: 7"><img src="lax.JPG" /></span>
-      <span style="--i: 8"><img src="lax.JPG" /></span>
+      <span style="--i: 1"><img src="lax1.jpg" /></span>
+      <span style="--i: 2"><img src="lax2.jpg" /></span>
+      <span style="--i: 3"><img src="lax3.jpg" /></span>
+      <span style="--i: 4"><img src="lax4.jpg" /></span>
+      <span style="--i: 5"><img src="track1.JPG" /></span>
+      <span style="--i: 6"><img src="xc1.JPG" /></span>
+      <span style="--i: 7"><img src="xc2.jpg" /></span>
+      <span style="--i: 8"><img src="xc3.JPG" /></span>
+    </div>
+
+    <div class="buttons-container">
+      <a href="#" class="button" onclick="toggleDropdown('stories')">Sports</a>
+    </div>
+
+    <div id="dropdown-stories" class="dropdown">
+      <div class="dropdown-content">
+        <span class="close-button" onclick="toggleDropdown()">×</span>
+        <!-- Close button -->
+        <a href="#" onclick="showBubble('xc')">Cross Country</a>
+        <a href="#" onclick="showBubble('track')">Track & Field</a>
+        <a href="#" onclick="showBubble('lax')">Lacrosse</a>
+      </div>
+    </div>
+
+    <div id="dropdown-experience" class="dropdown"></div>
+
+    <div id="bubble" class="bubble">
+      <span class="close-button" onclick="closeBubble()">×</span>
+      <p id="bubble-content">This is in the bubble</p>
     </div>
   </body>
 </html>

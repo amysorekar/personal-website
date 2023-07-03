@@ -43,7 +43,6 @@ a {
     color: #111;
     transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
 
-    /* Thanks Chris Coyier, you got my back always. https://css-tricks.com/different-transitions-for-hover-on-hover-off/ */
 }
 
 .link-one::before {

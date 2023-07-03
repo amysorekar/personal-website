@@ -210,6 +210,7 @@
     justify-content: center;
     align-items: center;
     transition: border-color 0.5s ease;
+
 }
 
 .dropdown-content.no-border {
@@ -365,7 +366,6 @@ body,
 .menu li a {
     text-decoration: none;
     color: white;
-    text-transform: uppercase;
     font-weight: 600;
     transition: 0.5s;
 }
