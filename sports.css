@@ -90,6 +90,27 @@ body,
 }
 
 
+@media screen and (max-width: 480px) {
+    .nav {
+        top: 5px;
+        padding: 5px;
+
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu li {
+        margin: 5px;
+    }
+
+    .menu li a {
+        font-size: 10px;
+        margin: 7px;
+    }
+}
+
 
 body {
     min-height: 100vh;
@@ -296,6 +317,7 @@ body {
     display: none;
     z-index: 9999;
     border: 2px solid white;
+    overflow: auto;
 }
 
 .bubble.active {

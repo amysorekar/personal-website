@@ -266,6 +266,18 @@ a {
     /* Show the menu when open */
 }
 
+@media screen and (max-width: 480px) {
+    .menu {
+        padding: 5px;
+        top: 10%
+    }
+
+    .menu a {
+        margin: 5px;
+        font-size: 10px;
+    }
+}
+
 .overlay {
     position: fixed;
     top: 0;
