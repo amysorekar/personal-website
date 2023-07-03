@@ -99,6 +99,14 @@
     background: linear-gradient(235deg, #e100ff, #010615, #ff0000)
 }
 
+@media (max-width: 480px) {
+    .box {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+    }
+}
+
 .box .content {
     position: absolute;
     bottom: 0;
@@ -133,6 +141,20 @@
     color: #fff;
     font-weight: 200;
     letter-spacing: 2px;
+}
+
+@media (max-width: 480px) {
+    .box .content {
+        height: 50px;
+    }
+
+    .box .content h2 {
+        font-size: 10px;
+    }
+
+    .box .content h2 span {
+        font-size: 10px;
+    }
 }
 
 .buttons-container {
@@ -176,6 +198,17 @@
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+    .buttons-container {
+        bottom: 30px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
 }
 
 .dropdown {
@@ -266,6 +299,19 @@
     }
 }
 
+
+@media (max-width: 480px) {
+    .dropdown-content {
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+    }
+
+    .close-button {
+        font-size: 20px;
+    }
+}
+
 .neon-text {
     position: fixed;
     top: 15vh;
@@ -283,6 +329,15 @@
     transform: scale(1.2);
 }
 
+
+@media (max-width: 480px) {
+    .neon-text {
+        font-size: 20px;
+        top: 120px;
+        left: 23%;
+    }
+}
+
 .bubble {
     position: fixed;
     top: 50%;
@@ -297,6 +352,7 @@
     display: none;
     z-index: 9999;
     border: 2px solid white;
+    overflow: auto;
 }
 
 .bubble.active {
@@ -325,6 +381,16 @@
     color: white;
 }
 
+
+
+@media (max-width: 480px) {
+    .bubble {
+        width: 90%;
+        height: 250px;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
 
 body,
 .nav,
@@ -417,6 +483,42 @@ body,
     transform: translateY(0) rotate(45deg);
 }
 
+/* Small devices (up to 767px) */
+@media screen and (max-width: 767px) {
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #000000;
+        padding: 10px;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        border-radius: 0;
+    }
+
+    .menu {
+        width: auto;
+        padding: 0;
+        display: none;
+    }
+
+    .nav input:checked~.menu {
+        display: block;
+        position: absolute;
+        top: 90%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+
+
+
+}
 
 
 .special {

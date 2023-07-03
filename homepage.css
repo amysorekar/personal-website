@@ -140,6 +140,30 @@ ul li a:hover:before {
   transition-delay: 0.2s;
 }
 
+@media (max-width: 480px) {
+  .logo {
+    top: 20px;
+    left: 20px;
+    font-size: 1.5em;
+  }
+
+  ul li:before {
+    top: 10%;
+    font-size: 4em;
+  }
+
+  ul li a {
+    padding: 4px 10px;
+    letter-spacing: 1px;
+  }
+
+  ul li a:before {
+    left: -80px;
+    width: 60px;
+  }
+}
+
+
 .banner {
   position: relative;
   width: 100%;
@@ -166,6 +190,7 @@ ul li a:hover:before {
   font-size: 1.2em;
   display: inline-block;
 }
+
 
 .icon-container {
   position: fixed;
@@ -202,7 +227,7 @@ ul li a:hover:before {
   margin-bottom: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   header {
     padding: 20px 50px;
   }
@@ -250,6 +275,12 @@ ul li a:hover:before {
   animation: animate 2s steps(12) infinite;
 }
 
+@media (max-width: 480px) {
+  .container .text {
+    font-size: 20px;
+  }
+}
+
 @keyframes animate {
 
   40%,
@@ -259,5 +290,31 @@ ul li a:hover:before {
 
   100% {
     left: 0%;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .icon-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-80%);
+    width: auto;
+  }
+
+  .icon-link {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  .icon-img {
+    width: 25px;
+    height: 25px;
   }
 }
