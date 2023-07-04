@@ -385,6 +385,7 @@ body,
         height: auto;
         padding: 10px;
         z-index: 1000;
+        position: absolute;
 
     }
 
@@ -409,6 +410,7 @@ body,
         padding: 20px;
         overflow: auto;
         z-index: 9000;
+        position: fixed;
 
     }
 
@@ -420,6 +422,7 @@ body,
         width: 150px;
         height: 150px;
         animation-duration: 30s;
+        position: relative;
     }
 
     .box span {
