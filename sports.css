@@ -384,6 +384,8 @@ body,
         width: 80%;
         height: auto;
         padding: 10px;
+        z-index: 1000;
+
     }
 
     .dropdown-content a {
@@ -406,6 +408,8 @@ body,
         height: 80%;
         padding: 20px;
         overflow: auto;
+        z-index: 9000;
+
     }
 
     .bubble p {
