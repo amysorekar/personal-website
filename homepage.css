@@ -140,28 +140,6 @@ ul li a:hover:before {
   transition-delay: 0.2s;
 }
 
-@media (max-width: 480px) {
-  .logo {
-    top: 20px;
-    left: 20px;
-    font-size: 1.5em;
-  }
-
-  ul li:before {
-    top: 10%;
-    font-size: 4em;
-  }
-
-  ul li a {
-    padding: 4px 10px;
-    letter-spacing: 1px;
-  }
-
-  ul li a:before {
-    left: -80px;
-    width: 60px;
-  }
-}
 
 
 .banner {
@@ -227,29 +205,6 @@ ul li a:hover:before {
   margin-bottom: 10px;
 }
 
-@media (max-width: 480px) {
-  header {
-    padding: 20px 50px;
-  }
-
-  .banner {
-    padding: 100px 50px 150px;
-  }
-
-  .banner h2 {
-    font-size: 1.8em;
-  }
-
-  .banner .content p,
-  .banner .content a {
-    font-size: 1em;
-  }
-
-  .banner.active {
-    transform: translateX(-250px);
-  }
-
-}
 
 .container .text {
   position: relative;
@@ -275,11 +230,7 @@ ul li a:hover:before {
   animation: animate 2s steps(12) infinite;
 }
 
-@media (max-width: 480px) {
-  .container .text {
-    font-size: 20px;
-  }
-}
+
 
 @keyframes animate {
 
@@ -292,8 +243,6 @@ ul li a:hover:before {
     left: 0%;
   }
 }
-
-
 
 @media (max-width: 480px) {
   .icon-container {
@@ -317,4 +266,51 @@ ul li a:hover:before {
     width: 25px;
     height: 25px;
   }
+
+  .container .text {
+    font-size: 20px;
+  }
+
+  header {
+    padding: 20px 50px;
+  }
+
+  .banner {
+    padding: 100px 50px 150px;
+  }
+
+  .banner h2 {
+    font-size: 1.8em;
+  }
+
+  .banner .content p,
+  .banner .content a {
+    font-size: 1em;
+  }
+
+  .banner.active {
+    transform: translateX(-250px);
+  }
+
+  .logo {
+    top: 20px;
+    left: 20px;
+    font-size: 1.5em;
+  }
+
+  ul li:before {
+    top: 10%;
+    font-size: 4em;
+  }
+
+  ul li a {
+    padding: 4px 10px;
+    letter-spacing: 1px;
+  }
+
+  ul li a:before {
+    left: -80px;
+    width: 60px;
+  }
+
 }
